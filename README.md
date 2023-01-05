@@ -5,7 +5,7 @@ With that in mind, I needed to understand how *signals* work in Godot. So this d
 The project is organized as:
 
 Main
-|--Parent
-    |--Child0
-    |--Child1
+- Parent
+    - Child0
+    -Child1
 
