@@ -10,5 +10,6 @@ func _ready():
 
 func doIt():
 	pass
-	var msg = yield($ , "Test")
+	var path=get_node("../Child0")
+	var msg = yield(path , "Test")
 	print(msg + " From Sibling[Child1] of Child0")
