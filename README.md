@@ -1,7 +1,7 @@
 
 ***
 ## Understanding *Signals*
-***
+
 Trying to use the Godot game engine programmatically as much as possible
 
 With that in mind, I needed to understand how *signals* work in Godot. So this demo project tries to demonstrate how signals work
@@ -44,7 +44,7 @@ emit_signal("Test","a bit of data")
 
 ***
 ## Real World Usage of *Signals*
-***
+
 However, in the end this is moot for as larger projects where you would use a *controller* or intermediary of sorts to connect or direct signals properly. To use an older analogy of a telephone switchboard, a viable control system could look like this:
 
 
