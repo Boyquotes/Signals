@@ -54,7 +54,8 @@ However, in the end this is moot for as larger projects where you would use a *c
       - Child1 [*Person receiving the call*]
 
 
-- `Child0` dials a telephone number [Godot script emits a signal] 
 
+Breakdown:
+- `Child0` dials a telephone number [Godot script emits a signal] 
 - The switchboard `Parent` routes the call [the signal] made by `Child0` to `Child1`  
 - `Child1` accepts [connects] the call from `Child0`
