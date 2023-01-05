@@ -16,3 +16,5 @@ script = ExtResource( 3 )
 
 [node name="Child0" type="Node2D" parent="Parent"]
 script = ExtResource( 2 )
+
+[connection signal="ready" from="Parent/Child1" to="Parent/Child0" method="_on_Child1_ready"]
