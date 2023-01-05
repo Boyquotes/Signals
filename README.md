@@ -30,13 +30,13 @@ In short  the scripts are contained *inside* of the nodes
 Even though every file could be in the same directory of your operating system. Godot does not see it that way and therefore to navigate from the node `Child0` to `Child1` you cannot not use the `./` or *current directory* path designator, instead you would need to use the `../` or *parent directory* path designator.
 
 
-#### Child1.gd [emitter]
+#### Child1.gd [receiver]
 ```
 var path=get_node("../Child0")
 var msg = yield(path , "Test")
 print(msg + " From Sibling[Child1] of Child0")
 ```
-#### Child0.gd [receiver]
+#### Child0.gd [emitter]
 ```
 emit_signal("Test","a bit of data")
 ```
