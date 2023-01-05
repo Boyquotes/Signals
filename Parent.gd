@@ -9,4 +9,4 @@ func _ready():
 
 func doIt():
 	var msg = yield($Child0, "Test")
-	print(msg + " From Child")
+	print(msg + " From Child0")
