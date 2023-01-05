@@ -59,3 +59,8 @@ Breakdown:
 - `Child0` dials a telephone number [Godot script emits a signal] 
 - The switchboard `Parent` routes the call [the signal] made by `Child0` to `Child1`  
 - `Child1` accepts [connects] the call from `Child0`
+
+
+
+***
+Thanks to the people on the Godot Discord for helping me understand this.
