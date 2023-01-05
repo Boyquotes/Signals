@@ -25,6 +25,17 @@ In short  the scripts are contained *inside* of the nodes
 
 Even though every file could be in the same directory of your operating system. Godot does not see it that way and therefore to navigate from the node `Child0` to `Child1` you cannot not use the `./` or *current directory* path designator, instead you would need to use the `../` or *parent directory* path designator.
 
+### *Child0.gd*
+```
+emit_signal("Test","a bit of data")
+```
+
+### *Child1.gd*
+```
+var path=get_node("../Child0")
+var msg = yield(path , "Test")
+print(msg + " From Sibling[Child1] of Child0")
+```
 
 However, in the end this is moot for as larger projects where you would use a *controller* or intermediary of sorts to connect or direct signals properly. To use an older analogy of a telephone switchboard, a viable control system could look like this:
 
@@ -35,6 +46,7 @@ However, in the end this is moot for as larger projects where you would use a *c
       - Child1 [*Person receiving the call*]
 
 
-- `Child0` dials a telephone number [a Godot script emits a signal]
+- `Child0` dials a telephone number [Godot script emits a signal] 
+
 - The switchboard `Parent` routes the call [the signal] made by `Child0` to `Child1`  
 - `Child1` accepts [connects] the call from `Child0`
